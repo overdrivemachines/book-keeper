@@ -7,3 +7,5 @@ Allow users to save bookmarks. User can click on the bookmarks/links and will be
 Live - https://overdrivemachines.github.io/book-keeper/
 
 ## References
+
+- Background - https://tympanus.net/Development/ImageToContent/
