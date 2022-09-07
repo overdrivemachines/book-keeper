@@ -9,3 +9,7 @@ Live - https://overdrivemachines.github.io/book-keeper/
 ## References
 
 - Background - https://tympanus.net/Development/ImageToContent/
+- URL Regexp
+  - https://uibakery.io/regex-library/url
+  - https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
+  - https://regexr.com/
