@@ -30,7 +30,7 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--color-bg);
   background: url(bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -39,12 +39,25 @@ body {
   background-size: cover;
 }
 
-h1 {
+h1.title {
+  font-family: "Scotch-Display", sans-serif;
+  font-size: max(2rem, min(10vw, 8rem));
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
   color: var(--color-text);
   padding: 20px;
+  padding-bottom: 12px;
+  font-size: 32px;
+  line-height: 32px;
   background-color: rgba(11, 10, 10, 0.5);
   border-radius: var(--border-radius);
   cursor: pointer;
+  border: 1px solid var(--color-text);
   text-transform: uppercase;
   width: 275px;
   margin: 20px auto 10px;
@@ -53,6 +66,69 @@ h1 {
   /* font-family: "Scotch-Display", sans-serif; */
   text-align: center;
 }
-h1:hover {
+h2:hover {
   background-color: rgba(11, 10, 10, 0.8);
+}
+
+/* Bookmarks */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  border-radius: var(--border-radius);
+  padding: 10px 20px 14px 20px;
+  margin: 10px;
+  background: rgba(11, 10, 10, 0.5);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+}
+.item:hover {
+  background: rgba(11, 10, 10, 0.6);
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "BotanikaMono-Regular", sans-serif;
+}
+
+/* "Love" */
+a:link,
+a:visited {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* "Hate" */
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.fa-xmark {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+}
+.name {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.name img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  /* line up image with text */
+  vertical-align: sub;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
