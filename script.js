@@ -52,6 +52,18 @@ function validate(nameValue, urlValue) {
     return false;
   }
 
+  // Check if URL already exists
+
+  const matchedBookmarks = bookmarks.filter(
+    (bookmark) => bookmark.url === urlValue
+  );
+  if (matchedBookmarks.length > 0) {
+    alert(
+      `Bookmark already exists. Bookmark name: ${matchedBookmarks[0].name}. Please enter a different URL.`
+    );
+    return false;
+  }
+
   return true;
 }
 

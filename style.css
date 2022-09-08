@@ -61,7 +61,7 @@ h2 {
   border: 1px solid var(--color-text);
   text-transform: uppercase;
   width: 275px;
-  margin: 20px auto 10px;
+  margin: 20px auto 88px;
   user-select: none;
   font-family: "BotanikaMono-Regular", sans-serif;
   /* font-family: "Scotch-Display", sans-serif; */
@@ -76,6 +76,7 @@ h2:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .item {
   border-radius: var(--border-radius);
@@ -150,10 +151,11 @@ a:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   max-width: 95%;
   width: 500px;
-  animation: modalopen 1s;
+  animation: modalopen 0.4s;
   border: 3px solid var(--color-text);
   border-radius: var(--border-radius);
   font-size: 24px;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes modalopen {
@@ -237,8 +239,7 @@ button:focus {
   .container {
     flex-direction: column;
   }
-}
-
-#modal {
-  /* display: none; */
+  h2 {
+    margin-bottom: 40px;
+  }
 }
